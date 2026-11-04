@@ -70,7 +70,36 @@ Example: `git reset --soft HEAD~1`
 **It helps maintain stable production code and organized release management.**   
 
 ### 13. What is trunk-based development?
+**Trunk-Based Development is a Git branching strategy where developers frequently integrate small code changes into a single main branch.**   
+**It uses short-lived feature branches or direct commits, along with automated testing and CI/CD pipelines.**   
+**This reduce merge conflicts, improves collaboration, and supports faster software delivery.**  
+
 ### 14. How do you manage multiple environments (dev, staging, prod) using Git?
+**We manage multiple environments using separate branches, environment-specific configuration files, and CI/CD pipelines to ensure code is properly tested before reaching production.**    
+`
+main
+ |
+develop
+ |
+feature/login
+ |
+Dev → Staging → Production
+` 
+
+- Develop: For development and testing
+- Staging: For pre-production validation.
+- Main: For production-ready code.
+
+**We maintain separate configuration files:**   
+`
+config/
+  dev.yaml
+  staging.yaml
+  prod.yaml
+  `
+**Each environments has its own configuration, credentials, and resource settings.**                  
+**Secrets should be stored in secrets manages, not committed to Git.**  
+
 ### 15. How do you ensure code stability in production branch?
 ### 16. How do you manage hotfix deployment?
 ### 17. What is a merge conflict?
