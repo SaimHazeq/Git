@@ -77,13 +77,13 @@ Example: `git reset --soft HEAD~1`
 ### 14. How do you manage multiple environments (dev, staging, prod) using Git?
 **We manage multiple environments using separate branches, environment-specific configuration files, and CI/CD pipelines to ensure code is properly tested before reaching production.**    
 `
-main
- |
-develop
- |
-feature/login
- |
-Dev → Staging → Production
+main                               
+ |                                 
+develop                             
+ |                                   
+feature/login                          
+ |                           
+Dev → Staging → Production                          
 ` 
 
 - Develop: For development and testing
