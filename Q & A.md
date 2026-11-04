@@ -42,10 +42,10 @@
 `git rebase main`  
 
 ### 6. What is the difference between fork and clone?   
-**Fork**                 
+**fork**                 
 - Creates an independent copy of someone else's repository on my GitHub account.
 
-**Clone**                   
+**clone**                   
 - Downloads an existing repository to my local machine.
 
 ### 7. How do you rollback changes?
@@ -130,7 +130,7 @@ config/
 **We use `git status` to identify conflicting files during a merge conflict.** 
 
 ### 23. What is git stash?
-**Git stash temporarily saves uncommitted changes without creating a commit, allowing you to switch branches or work on something else and restore those changes later.**   
+**git stash temporarily saves uncommitted changes without creating a commit, allowing you to switch branches or work on something else and restore those changes later.**   
 ```
 git stash          # Save changes
 git stash list     # View saved stashes
@@ -139,31 +139,31 @@ git stash apply    # Restore but keep stash
 ```
 
 ### 24. What is git reset?
-**Git reset is used to undo commits by moving the HEAD pointer to a previous commit.**   
+**git reset is used to undo commits by moving the HEAD pointer to a previous commit.**   
 **It has three modes:**   
 - `--soft` (keeps changes staged),   
 - `--mixed` (keeps changes unstaged),    
 - `--hard` (discards changes).
 
 ### 25. What is git revert?
-**Git revert is used to undo a specific commit by creating a new commit that reverses its changes without rewriting the existing Git history.**   
+**git revert is used to undo a specific commit by creating a new commit that reverses its changes without rewriting the existing Git history.**   
 `git revert <commit-id>` 
 
 ### 26. What are Git tags?
-**Git tags are used to mark specific commits, usually for software releases or version numbers like `v1.0` `v2.0`, making it easier to identify and track release versions.**
+**git tags are used to mark specific commits, usually for software releases or version numbers like `v1.0` `v2.0`, making it easier to identify and track release versions.**
 
 ### 27. What is git rebase?
-**Git rebase is used to move or replay commits from one branch onto another branch, creating a cleaner, linear commit history.**   
+**git rebase is used to move or replay commits from one branch onto another branch, creating a cleaner, linear commit history.**   
 ```
 git checkout feature
 git rebase main
 ```
 
 ### 28. Difference between merge and rebase?
-**Git Merge**   
+**git merge**   
 - combines changes from two branches and creates a merge commit (when needed), preserving branch history.
                
-**Git Rebase**   
+**git rebase**   
 - moves commits onto another branch to create a cleaner, linear history.  
 
 ### 29. When should you use rebase?
