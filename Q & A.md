@@ -25,32 +25,32 @@ Example: HEAD -> main -> commit123
 ### 18. When do merge conflicts occur?
 ### 19. How do you resolve merge conflicts?
 ### 20. What happens if two developers modify the same file?
-How do you avoid merge conflicts?
-How do you see conflicting files?
-What is git stash?
-What is git reset?
-What is git revert?
-What are Git tags?
-What is git rebase?
-Difference between merge and rebase?
-When should you use rebase?
-What Git workflow do you use in your team?
-How do developers collaborate using Git?
-How do you manage multiple developers working on same repo?
-How do you protect main branch?
-What is a pull request?
-What is a code review?
-What is a merge request?
-What happens when a wrong commit is pushed to production branch?
-How do you rollback a bad deployment using Git?
-How do you handle large repositories?
-How do you manage Git access control?
-How do you integrate Git with CI/CD?
-How does Jenkins trigger pipeline using Git?
-How do you store infrastructure code in Git?
-How do you manage multiple environments with Git branches?
-What is GitOps?
-How do you fix accidentally committed secrets?
-How do you prevent secrets in Git?
-What is Git secret scanning?
-How do you manage SSH keys for Git access?
+### 21. How do you avoid merge conflicts?
+### 22. How do you see conflicting files?
+### 23. What is git stash?
+### 24. What is git reset?
+### 25. What is git revert?
+### 26. What are Git tags?
+### 27. What is git rebase?
+### 28. Difference between merge and rebase?
+### 29. When should you use rebase?
+### 30. What Git workflow do you use in your team?
+### 31. How do developers collaborate using Git?
+### 32. How do you manage multiple developers working on same repo?
+### 33. How do you protect main branch?
+### 34. What is a pull request?
+### 35. What is a code review?
+### 36. What is a merge request?
+### 37. What happens when a wrong commit is pushed to production branch?
+### 38. How do you rollback a bad deployment using Git?
+### 39. How do you handle large repositories?
+### 40. How do you manage Git access control?
+### 41. How do you integrate Git with CI/CD?
+### 42. How does Jenkins trigger pipeline using Git?
+### 43. How do you store infrastructure code in Git?
+### 44. How do you manage multiple environments with Git branches?
+### 45. What is GitOps?
+### 46. How do you fix accidentally committed secrets?
+### 47. How do you prevent secrets in Git?
+### 48. What is Git secret scanning?
+### 49. How do you manage SSH keys for Git access?
