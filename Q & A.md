@@ -42,9 +42,9 @@
 `git rebase main`  
 
 ### 6. What is the difference between fork and clone?   
-**Fork**
+**Fork**                 
 Creates an independent copy of someone else's repository on my GitHub account.**   
-**Clone**  
+**Clone**                   
 Downloads an existing repository to my local machine.**
 
 ### 7. How do you rollback changes?
