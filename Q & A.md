@@ -41,9 +41,11 @@
 `git checkout feature`                           
 `git rebase main`  
 
-### 6. What is the difference between fork and clone?
-- **Fork creates an independent copy of someone else's repository on my GitHub account.**   
-- **Clone downloads an existing repository to my local machine.**
+### 6. What is the difference between fork and clone?   
+**Fork**
+Creates an independent copy of someone else's repository on my GitHub account.**   
+**Clone**  
+Downloads an existing repository to my local machine.**
 
 ### 7. How do you rollback changes?
 - **If I need to rollback changes in Git, I first identify the stage of the changes.**  
