@@ -10,12 +10,12 @@
 ### 3. What is the difference between Git clone and Git pull?
 **git clone**    
 - Copies an entire repository  
-- Used first time
+- Used first time                                           
 `git clone repo_url`
 
 **git pull**  
 - Fetches latest changes from remote  
-- updates existing repo
+- updates existing repo                                                  
 `git pull origin main`   
 
 ### 4. What is the difference between Git fetch and Git pull?
