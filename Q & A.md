@@ -19,6 +19,14 @@
 `git pull origin main`   
 
 ### 4. What is the difference between Git fetch and Git pull?
+**git fetch**  
+- Downloads changes
+- Does NOT merge
+**git pull**
+- Fetch + merge
+`git fetch origin`
+`git merge origin/main`  
+
 ### 5. What is the difference between Git merge and Git rebase?
 ### 6. What is the difference between fork and clone?
 ### 7. How do you rollback changes?
