@@ -70,9 +70,9 @@ Example: `git reset --soft HEAD~1`
 **It helps maintain stable production code and organized release management.**   
 
 ### 13. What is trunk-based development?
-**Trunk-Based Development is a Git branching strategy where developers frequently integrate small code changes into a single main branch.**   
-**It uses short-lived feature branches or direct commits, along with automated testing and CI/CD pipelines.**   
-**This reduce merge conflicts, improves collaboration, and supports faster software delivery.**  
+- **Trunk-Based Development is a Git branching strategy where developers frequently integrate small code changes into a single main branch.**   
+- **It uses short-lived feature branches or direct commits, along with automated testing and CI/CD pipelines.**   
+- **This reduce merge conflicts, improves collaboration, and supports faster software delivery.**  
 
 ### 14. How do you manage multiple environments (dev, staging, prod) using Git?
 **We manage multiple environments using separate branches, environment-specific configuration files, and CI/CD pipelines to ensure code is properly tested before reaching production.**    
@@ -110,8 +110,8 @@ config/
 - **Finally, I merge the hotfix back into the develop branch to keep both branches synchronized.**  
 
 ### 17. What is a merge conflict?
-**A merge conflict occurs when Git cannot automatically merge changes because two branches have modified the same lines of a file differently.**   
-**Example: Two developers modify the same line in a file. Git cannot decide which change to keep, so we must resolve the conflict manually, test the changes, and complete the merge.**  
+- **A merge conflict occurs when Git cannot automatically merge changes because two branches have modified the same lines of a file differently.**   
+- **Example: Two developers modify the same line in a file. Git cannot decide which change to keep, so we must resolve the conflict manually, test the changes, and complete the merge.**  
 
 ### 18. When do merge conflicts occur?
 
