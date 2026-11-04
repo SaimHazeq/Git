@@ -42,7 +42,14 @@
 `git rebase main`  
 
 ### 6. What is the difference between fork and clone?
+**Fork creates an independent copy of someone else's repository on my GitHub account, Whereas Clone downloads an existing repository to my local machine.**
+
 ### 7. How do you rollback changes?
+**If I need to rollback changes in Git, I first identify the stage of the changes.**  
+**If the changes are not committed, I use `git restore`. If they are committed but not pushed, I can use `git reset` depending on whether I want to keep or discard the changes.**   
+**If changes are already pushed to a shared repository, I prefer `git revert` because it creates a new commit that reverses the previous changes without rewriting Git history.**  
+**For production deployments, I would identify the last stable application version and rollback using the deployment tool. For Kubernetes, I use `kubectl rollout undo`, and then verify pod health, application logs and service availability.**
+
 ### 8. How do you reset a commit?
 ### 9. How do you revert a commit?
 ### 10. How do you stage specific files?
