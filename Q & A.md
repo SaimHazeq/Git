@@ -117,19 +117,13 @@ config/
 - **A merge conflict occurs when Git cannot automatically merge changes because two branches have modified the same lines of a file differently.**   
 - **Example: Two developers modify the same line in a file. Git cannot decide which change to keep, so we must resolve the conflict manually, test the changes, and complete the merge.**  
 
-### 18. When do merge conflicts occur?
-
-### 19. How do you resolve merge conflicts?
-
-### 20. What happens if two developers modify the same file?
-
-### 21. How do you avoid merge conflicts?
+### 18. How do you avoid merge conflicts?
  **I avoid merge conflicts by frequently pulling the latest changes, keeping feature branches short-lived, communicating with team members, making small commits, and regularly merging changes from the main branch into my feature branch.**
 
-### 22. How do you see conflicting files?
+### 19. How do you see conflicting files?
 **We use `git status` to identify conflicting files during a merge conflict.** 
 
-### 23. What is git stash?
+### 20. What is git stash?
 **git stash temporarily saves uncommitted changes without creating a commit, allowing you to switch branches or work on something else and restore those changes later.**   
 ```
 git stash          # Save changes
@@ -138,95 +132,95 @@ git stash pop      # Restore and remove latest stash
 git stash apply    # Restore but keep stash
 ```
 
-### 24. What is git reset?
+### 21. What is git reset?
 **git reset is used to undo commits by moving the HEAD pointer to a previous commit.**   
 **It has three modes:**   
 - `--soft` (keeps changes staged),   
 - `--mixed` (keeps changes unstaged),    
 - `--hard` (discards changes).
 
-### 25. What is git revert?
+### 22. What is git revert?
 **git revert is used to undo a specific commit by creating a new commit that reverses its changes without rewriting the existing Git history.**   
 `git revert <commit-id>` 
 
-### 26. What are Git tags?
+### 23. What are Git tags?
 **git tags are used to mark specific commits, usually for software releases or version numbers like `v1.0` `v2.0`, making it easier to identify and track release versions.**
 
-### 27. What is git rebase?
+### 24. What is git rebase?
 **git rebase is used to move or replay commits from one branch onto another branch, creating a cleaner, linear commit history.**   
 ```
 git checkout feature
 git rebase main
 ```
 
-### 28. Difference between merge and rebase?
+### 25. Difference between merge and rebase?
 **git merge**   
 - combines changes from two branches and creates a merge commit (when needed), preserving branch history.
                
 **git rebase**   
 - moves commits onto another branch to create a cleaner, linear history.  
 
-### 29. When should you use rebase?
+### 26. When should you use rebase?
 **Use Git rebase when you want to update your feature branch with the latest changes from the main branch and maintain a clean, linear commit history, preferably before merging your feature branch. Avoid rebasing shared branches.**
 
-### 30. What Git workflow do you use in your team?
+### 27. What Git workflow do you use in your team?
 - **We follow a feature-based Git workflow similar to GitHub Flow.**   
 - **Developers create feature branches, commit and push changes, raise Pull Request, and undergo code reviews.**   
 - **Jenkins runs automated CI/CD check, and after approval, changes are merger into the main branch and deployed.** 
 
-### 31. How do developers collaborate using Git?
+### 28. How do developers collaborate using Git?
 **Developers collaborate using Git by working on separate feature branches, committing and pushing changes to a shared remote repository, creating Pull Request, reviewing each other's code, resolving merge conflicts, and merging approved changes into the main branch.**
 
-### 32. How do you manage multiple developers working on same repo?
+### 29. How do you manage multiple developers working on same repo?
 **I manage multiple developers by assigning separate feature branches, following a common branching strategy, encouraging frequent commits and pulls, enforcing Pull Request reviews, resolving merge conflicts, and protecting the main branch to maintain code quality and stability.**
 
-### 33. How do you protect main branch?
+### 30. How do you protect main branch?
 **I protect the main branch by enabling branch protection rule, restricting direct pushes, requiring Pull Request approvals, enforcing automated CI/CD checks, and allowing only authorized developers to merge code.**
 
-### 34. What is a pull request?
+### 31. What is a pull request?
 **A Pull Request(PR) is a request to merge code changes from one branch into another, allowing team members to review, discuss, and approve the changes before merging.**
 
-### 35. What is a code review?
+### 32. What is a code review?
 **Code review is the process of examining another developer's code to identify bugs, security issues, coding mistakes, and quality improvements before merging it into the main branch.**
 
-### 36. What is a merge request?
+### 33. What is a merge request?
 **A Merge Request(MR) is a request to merge code changes from one branch into another after code review and approval. It is Gitlab's equivalent of a Pull Request(PR) in GitHUb/**
 
-### 37. What happens when a wrong commit is pushed to production branch?
+### 34. What happens when a wrong commit is pushed to production branch?
 **When a wrong commit is pushed to the production branch, it can introduce bugs, break application functionality, cause service downtime, or affect users until the issue is fixed or rolled back.**
 
-### 38. How do you rollback a bad deployment using Git?
+### 35. How do you rollback a bad deployment using Git?
 **I identify the fault commit, use `git revert <commit-id>` to reverse the changes, push the new commit, and trigger the CI/CD pipeline to redeploy the last stable application version.**
 
-### 39. How do you handle large repositories?
+### 36. How do you handle large repositories?
 **I manage large repositories by using Git LFS for large files, shallow clones to reduce download time, sparse checkout to work with specific directories, and proper branching strategies to maintain performance and organization.**
 
-### 40. How do you manage Git access control?
+### 37. How do you manage Git access control?
 **I manage Git access control using role-based permissions, SSH authentication, branch protection rules, least-privilege access, and mandatory Pull Request approvals to ensure only authorized developers can modify or merge code.**
 
-### 41. How do you integrate Git with CI/CD?
+### 38. How do you integrate Git with CI/CD?
 **I integrate Git with CI/CD using webhooks. Whenever a developer pushes code or creates a Pull Request, Jenkins automatically triggers the pipeline to perform code checkout, build, testing, security scanning, and deployment.**
 
-### 42. How does Jenkins trigger pipeline using Git?
+### 39. How does Jenkins trigger pipeline using Git?
 **Jenkins triggers a pipeline using Git Webhooks. Whenever a developer pushed code to GitHub, a webhook sends a notification to Jenkins, which automatically starts the configured CI/CD pipeline.**
 
-### 43. How do you store infrastructure code in Git?
+### 40. How do you store infrastructure code in Git?
 **I store infrastructure code such as Terraform and Ansible playbooks in a Git Repository, organize it into modules and environment-specific directories, and use feature branches, Pull Requests, and code reviews to manage changes safely.**
 
-### 44. How do you manage multiple environments with Git branches?
+### 41. How do you manage multiple environments with Git branches?
 **I use separate branches such as `develop`, `staging` and `main` for Dev, Staging and Production, respectively. Changes are tested in Dev, promoted to Staging, and merged into Production after successful testing and approval.**
 
-### 45. What is GitOps?
+### 42. What is GitOps?
 **GitOps is a DevOps practice where Git acts as the Single source of truth for infrastructure and application configurations. Tools like ArgoCD or Flux continuously monitor the Git repository and automatically synchronize with the Kubernetes Cluster.**
 
-### 46. How do you fix accidentally committed secrets?
+### 43. How do you fix accidentally committed secrets?
 **I immediately revoke and rotate the exposed credentials, remove the secrets from the repository, clean Git history if necessary, and use a secret manager like AWS Secret Manager to store credentials securely.**
 
-### 47. How do you prevent secrets in Git?
+### 44. How do you prevent secrets in Git?
 **I prevent secrets in Git by using AWS Secret Manager or environment variables, adding sensitive files to `.gitignore`, enabling pre-commit secret scannign, and never hardcoding credentials in source code.**
 
-### 48. What is Git secret scanning?
+### 45. What is Git secret scanning?
 **Git secret scanning is a security process that detects sensitive information like passwords, API keys, and access tokens in Git repositories before they are committed or pushed.**
 
-### 49. How do you manage SSH keys for Git access?
+### 46. How do you manage SSH keys for Git access?
 **I generate SSH key pairs, add the public key to GitHub, securely store the private key, configure SSH authentication, and regularly rotate keys while revoking unused keys.**
