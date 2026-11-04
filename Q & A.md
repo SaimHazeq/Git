@@ -29,7 +29,7 @@
 `git merge origin/main`  
 
 ### 5. What is the difference between Git merge and Git rebase?  
-- **git merge**  
+**git merge**  
 - merge combines changes from one into another.                    
 `git checkout main`                     
 `git merge feature-login`                                          
