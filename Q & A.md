@@ -15,7 +15,7 @@
 
 **git pull**  
 - Fetches latest changes from remote  
-- updates existing repo  
+- updates existing repo
 `git pull origin main`   
 
 ### 4. What is the difference between Git fetch and Git pull?
