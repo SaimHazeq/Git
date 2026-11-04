@@ -101,13 +101,13 @@ config/
 **Secrets should be stored in secrets manages, not committed to Git.**  
 
 ### 15. How do you ensure code stability in production branch?
-**I ensure production stability by implementing branch protection rules, mandatory Pull Request reviews, automated testing, Jenkins CI/CD validation, code quality checks using SonarQube, and security scanning using Trivy.**   
-**I also restrict direct pushes to the main branch and allow merging only after successful testing and approval.**  
+- **I ensure production stability by implementing branch protection rules, mandatory Pull Request reviews, automated testing, Jenkins CI/CD validation, code quality checks using SonarQube, and security scanning using Trivy.**   
+- **I also restrict direct pushes to the main branch and allow merging only after successful testing and approval.**  
 
 ### 16. How do you manage hotfix deployment?
-**I create a hotfix branch from the production `(main)` branch, fix the critical issue, test the changes, and raise a Pull Request for approval.**   
-**After approval, I merge it into main and deploy through the CI/CD pipeline.**  
-**Finally, I merge the hotfix back into the develop branch to keep both branches synchronized.**  
+- **I create a hotfix branch from the production `(main)` branch, fix the critical issue, test the changes, and raise a Pull Request for approval.**   
+- **After approval, I merge it into main and deploy through the CI/CD pipeline.**  
+- **Finally, I merge the hotfix back into the develop branch to keep both branches synchronized.**  
 
 ### 17. What is a merge conflict?
 **A merge conflict occurs when Git cannot automatically merge changes because two branches have modified the same lines of a file differently.**   
