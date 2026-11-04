@@ -21,7 +21,8 @@
 ### 4. What is the difference between Git fetch and Git pull?
 **git fetch**  
 - Downloads changes
-- Does NOT merge
+- Does NOT merge  
+ 
 **git pull**
 - Fetch + merge
 `git fetch origin`
