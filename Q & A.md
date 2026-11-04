@@ -3,19 +3,19 @@
 
 ### 2. What is the HEAD in Git?
 **HEAD is a pointer to the current commit or the currently checked-out branch.**  
-Example: HEAD -> main -> commit123  
+`Example: HEAD -> main -> commit123 ` 
 **When switching branches, HEAD moves to that branch.**
 
 
 ### 3. What is the difference between Git clone and Git pull?
-**git clone**  
-- Copies an entire repository
-- Used first time
-`git clone repo_url`
-**git pull**
-- Fetches latest changes from remote
-- updates existing repo
-`git pull origin main`
+**git clone**    
+- Copies an entire repository  
+- Used first time  
+`git clone repo_url`  
+**git pull**  
+- Fetches latest changes from remote  
+- updates existing repo  
+`git pull origin main`  
 
 ### 4. What is the difference between Git fetch and Git pull?
 ### 5. What is the difference between Git merge and Git rebase?
