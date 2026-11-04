@@ -3,4 +3,5 @@
 
 ### What is the HEAD in Git?
 **HEAD is a pointer to the current commit or the currently checked-out branch.**  
-Example: HEAD -> main -> commit123
+Example: HEAD -> main -> commit123  
+**When switching branches, HEAD moves to that branch.**
