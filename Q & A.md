@@ -15,16 +15,16 @@ Example: HEAD -> main -> commit123
 ### 8. How do you reset a commit?
 ### 9. How do you revert a commit?
 ### 10. How do you stage specific files?
-What is Git branching strategy?
-What is GitFlow?
-What is trunk-based development?
-How do you manage multiple environments (dev, staging, prod) using Git?
-How do you ensure code stability in production branch?
-How do you manage hotfix deployment?
-What is a merge conflict?
-When do merge conflicts occur?
-How do you resolve merge conflicts?
-What happens if two developers modify the same file?
+### 11. What is Git branching strategy?
+### 12. What is GitFlow?
+### 13. What is trunk-based development?
+### 14. How do you manage multiple environments (dev, staging, prod) using Git?
+### 15. How do you ensure code stability in production branch?
+### 16. How do you manage hotfix deployment?
+### 17. What is a merge conflict?
+### 18. When do merge conflicts occur?
+### 19. How do you resolve merge conflicts?
+### 20. What happens if two developers modify the same file?
 How do you avoid merge conflicts?
 How do you see conflicting files?
 What is git stash?
