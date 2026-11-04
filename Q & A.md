@@ -69,9 +69,9 @@ Example: `git reset --soft HEAD~1`
 **A Git branching strategy is a workflow for creating and managing branches so multiple developers can work on features, bug fixes, and releases without affecting the main production code.**
 
 ### 12. What is GitFlow?
-**GitFlow is a structured Git branching strategy that uses main, develop, feature, release, and hotfix branches.**     
-**Developers work on separate feature branches, merge completed features into develop, prepare releases using release branches, and use hotfix branches to fix critical production issues.**      
-**It helps maintain stable production code and organized release management.**   
+- **GitFlow is a structured Git branching strategy that uses main, develop, feature, release, and hotfix branches.**     
+- **Developers work on separate feature branches, merge completed features into develop, prepare releases using release branches, and use hotfix branches to fix critical production issues.**      
+- **It helps maintain stable production code and organized release management.**   
 
 ### 13. What is trunk-based development?
 - **Trunk-Based Development is a Git branching strategy where developers frequently integrate small code changes into a single main branch.**   
