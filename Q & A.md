@@ -59,8 +59,16 @@ Example: `git reset --soft HEAD~1`
 **We use `git revert <commit-id>` to undo a specific commit by creating a new commit that reverses its changes without rewriting Git history.**
 
 ### 10. How do you stage specific files?
+**We use `git add <filename>` to stage a specific file.**
+
 ### 11. What is Git branching strategy?
+**A Git branching strategy is a workflow for creating and managing branches so multiple developers can work on features, bug fixes, and releases without affecting the main production code.**
+
 ### 12. What is GitFlow?
+**GitFlow is a structured Git branching strategy that uses main, develop, feature, release, and hotfix branches.**     
+**Developers work on separate feature branches, merge completed features into develop, prepare releases using release branches, and use hotfix branches to fix critical production issues.**      
+**It helps maintain stable production code and organized release management.**   
+
 ### 13. What is trunk-based development?
 ### 14. How do you manage multiple environments (dev, staging, prod) using Git?
 ### 15. How do you ensure code stability in production branch?
