@@ -11,12 +11,11 @@
 **git clone**    
 - Copies an entire repository  
 - Used first time
-``git clone repo_url``  
-
+`git clone repo_url`
 **git pull**  
 - Fetches latest changes from remote  
 - updates existing repo  
-``git pull origin main``   
+`git pull origin main`   
 
 ### 4. What is the difference between Git fetch and Git pull?
 ### 5. What is the difference between Git merge and Git rebase?
