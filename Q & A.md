@@ -110,19 +110,63 @@ config/
 **Finally, I merge the hotfix back into the develop branch to keep both branches synchronized.**  
 
 ### 17. What is a merge conflict?
+**A merge conflict occurs when Git cannot automatically merge changes because two branches have modified the same lines of a file differently.**   
+**Example: Two developers modify the same line in a file. Git cannot decide which change to keep, so we must resolve the conflict manually, test the changes, and complete the merge.**  
+
 ### 18. When do merge conflicts occur?
+
 ### 19. How do you resolve merge conflicts?
+
 ### 20. What happens if two developers modify the same file?
+
 ### 21. How do you avoid merge conflicts?
+ **I avoid merge conflicts by frequently pulling the latest changes, keeping feature branches short-lived, communicating with team members, making small commits, and regularly merging changes from the main branch into my feature branch.**
+
 ### 22. How do you see conflicting files?
+**We use `git status` to identify conflicting files during a merge conflict.** 
+
 ### 23. What is git stash?
+**Git stash temporarily saves uncommitted changes without creating a commit, allowing you to switch branches or work on something else and restore those changes later.**   
+```
+git stash          # Save changes
+git stash list     # View saved stashes
+git stash pop      # Restore and remove latest stash
+git stash apply    # Restore but keep stash
+```
+
 ### 24. What is git reset?
+**Git reset is used to undo commits by moving the HEAD pointer to a previous commit.**   
+**It has three modes:**   
+`--soft` (keeps changes staged),   
+`--mixed` (keeps changes unstaged),    
+`--hard` (discards changes).
+
 ### 25. What is git revert?
+**Git revert is used to undo a specific commit by creating a new commit that reverses its changes without rewriting the existing Git history.**   
+`git revert <commit-id>` 
+
 ### 26. What are Git tags?
+**Git tags are used to mark specific commits, usually for software releases or version numbers like `v1.0` `v2.0`, making it easier to identify and track release versions.**
+
 ### 27. What is git rebase?
+**Git rebase is used to move or replay commits from one branch onto another branch, creating a cleaner, linear commit history.**   
+```
+git checkout feature
+git rebase main
+```
+
 ### 28. Difference between merge and rebase?
+**Git Merge combines changes from two branches and creates a merge commit (when needed), preserving branch history.**   
+**Git Rebase moves commits onto another branch to create a cleaner, linear history.**  
+
 ### 29. When should you use rebase?
+**Use Git rebase when you want to update your feature branch with the latest changes from the main branch and maintain a clean, linear commit history, preferably before merging your feature branch. Avoid rebasing shared branches.**
+
 ### 30. What Git workflow do you use in your team?
+**We follow a feature-based Git workflow similar to GitHub Flow.**   
+**Developers create feature branches, commit and push changes, raise Pull Request, and undergo code reviews.**   
+**Jenkins runs automated CI/CD check, and after approval, changes are merger into the main branch and deployed.** 
+
 ### 31. How do developers collaborate using Git?
 ### 32. How do you manage multiple developers working on same repo?
 ### 33. How do you protect main branch?
