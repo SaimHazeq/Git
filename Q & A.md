@@ -51,8 +51,8 @@
 - **For production deployments, I would identify the last stable application version and rollback using the deployment tool. For Kubernetes, I use `kubectl rollout undo`, and then verify pod health, application logs and service availability.**
 
 ### 8. How do you reset a commit?
-**We use `git reset` to undo a commit.**
-Example: `git reset --soft HEAD~1`  
+**We use `git reset` to undo a commit.**            
+Example: `git reset --soft HEAD~1`                           
 **Removes the last commit while keeping the changes staged.**
 
 ### 9. How do you revert a commit?
