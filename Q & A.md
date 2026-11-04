@@ -29,7 +29,7 @@
 `git merge origin/main`  
 
 ### 5. What is the difference between Git merge and Git rebase?  
-**git merge**  
+- **git merge**  
 - merge combines changes from one into another.                    
 `git checkout main`                     
 `git merge feature-login`                                          
@@ -42,7 +42,8 @@
 `git rebase main`  
 
 ### 6. What is the difference between fork and clone?
-**Fork creates an independent copy of someone else's repository on my GitHub account, Whereas Clone downloads an existing repository to my local machine.**
+- **Fork creates an independent copy of someone else's repository on my GitHub account.**   
+- **Clone downloads an existing repository to my local machine.**
 
 ### 7. How do you rollback changes?
 - **If I need to rollback changes in Git, I first identify the stage of the changes.**  
@@ -137,9 +138,9 @@ git stash apply    # Restore but keep stash
 ### 24. What is git reset?
 **Git reset is used to undo commits by moving the HEAD pointer to a previous commit.**   
 **It has three modes:**   
-`--soft` (keeps changes staged),   
-`--mixed` (keeps changes unstaged),    
-`--hard` (discards changes).
+- `--soft` (keeps changes staged),   
+- `--mixed` (keeps changes unstaged),    
+- `--hard` (discards changes).
 
 ### 25. What is git revert?
 **Git revert is used to undo a specific commit by creating a new commit that reverses its changes without rewriting the existing Git history.**   
@@ -156,16 +157,16 @@ git rebase main
 ```
 
 ### 28. Difference between merge and rebase?
-**Git Merge combines changes from two branches and creates a merge commit (when needed), preserving branch history.**   
-**Git Rebase moves commits onto another branch to create a cleaner, linear history.**  
+- **Git Merge combines changes from two branches and creates a merge commit (when needed), preserving branch history.**   
+- **Git Rebase moves commits onto another branch to create a cleaner, linear history.**  
 
 ### 29. When should you use rebase?
 **Use Git rebase when you want to update your feature branch with the latest changes from the main branch and maintain a clean, linear commit history, preferably before merging your feature branch. Avoid rebasing shared branches.**
 
 ### 30. What Git workflow do you use in your team?
-**We follow a feature-based Git workflow similar to GitHub Flow.**   
-**Developers create feature branches, commit and push changes, raise Pull Request, and undergo code reviews.**   
-**Jenkins runs automated CI/CD check, and after approval, changes are merger into the main branch and deployed.** 
+- **We follow a feature-based Git workflow similar to GitHub Flow.**   
+- **Developers create feature branches, commit and push changes, raise Pull Request, and undergo code reviews.**   
+- **Jenkins runs automated CI/CD check, and after approval, changes are merger into the main branch and deployed.** 
 
 ### 31. How do developers collaborate using Git?
 ### 32. How do you manage multiple developers working on same repo?
