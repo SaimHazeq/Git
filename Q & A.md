@@ -160,8 +160,10 @@ git rebase main
 ```
 
 ### 28. Difference between merge and rebase?
-- **Git Merge combines changes from two branches and creates a merge commit (when needed), preserving branch history.**   
-- **Git Rebase moves commits onto another branch to create a cleaner, linear history.**  
+**Git Merge**   
+-combines changes from two branches and creates a merge commit (when needed), preserving branch history.                 
+**Git Rebase**   
+-moves commits onto another branch to create a cleaner, linear history.  
 
 ### 29. When should you use rebase?
 **Use Git rebase when you want to update your feature branch with the latest changes from the main branch and maintain a clean, linear commit history, preferably before merging your feature branch. Avoid rebasing shared branches.**
