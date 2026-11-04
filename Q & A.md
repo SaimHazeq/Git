@@ -28,7 +28,19 @@
 `git fetch origin`                                                               
 `git merge origin/main`  
 
-### 5. What is the difference between Git merge and Git rebase?
+### 5. What is the difference between Git merge and Git rebase?  
+**git merge**  
+- merge combines changes from one into another.
+`git checkout main`
+`git merge feature-login`
+- Git creates a merge commit.  
+
+**git rebase**
+- rebase mover or reapplies commits from one branch onto another branch.
+- Instead of merge commits, it creates a linear history.
+`git checkout feature`
+`git rebase main`  
+
 ### 6. What is the difference between fork and clone?
 ### 7. How do you rollback changes?
 ### 8. How do you reset a commit?
