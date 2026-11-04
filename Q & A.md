@@ -12,6 +12,7 @@
 - Copies an entire repository  
 - Used first time
 `git clone repo_url`
+
 **git pull**  
 - Fetches latest changes from remote  
 - updates existing repo  
