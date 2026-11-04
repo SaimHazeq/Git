@@ -30,15 +30,15 @@
 
 ### 5. What is the difference between Git merge and Git rebase?  
 **git merge**  
-- merge combines changes from one into another.
-`git checkout main`
-`git merge feature-login`
-- Git creates a merge commit.  
+- merge combines changes from one into another.                    
+`git checkout main`                     
+`git merge feature-login`                                          
+- Git creates a merge commit.        
 
 **git rebase**
-- rebase mover or reapplies commits from one branch onto another branch.
-- Instead of merge commits, it creates a linear history.
-`git checkout feature`
+- rebase mover or reapplies commits from one branch onto another branch.        
+- Instead of merge commits, it creates a linear history.                       
+`git checkout feature`                           
 `git rebase main`  
 
 ### 6. What is the difference between fork and clone?
