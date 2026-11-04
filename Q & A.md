@@ -7,14 +7,14 @@ Example: HEAD -> main -> commit123
 **When switching branches, HEAD moves to that branch.**
 
 
-What is the difference between Git clone and Git pull?
-What is the difference between Git fetch and Git pull?
-What is the difference between Git merge and Git rebase?
-What is the difference between fork and clone?
-How do you rollback changes?
-How do you reset a commit?
-How do you revert a commit?
-How do you stage specific files?
+### 3. What is the difference between Git clone and Git pull?
+### 4. What is the difference between Git fetch and Git pull?
+### 5. What is the difference between Git merge and Git rebase?
+### 6. What is the difference between fork and clone?
+### 7. How do you rollback changes?
+### 8. How do you reset a commit?
+### 9. How do you revert a commit?
+### 10. How do you stage specific files?
 What is Git branching strategy?
 What is GitFlow?
 What is trunk-based development?
