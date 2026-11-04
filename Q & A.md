@@ -56,6 +56,8 @@ Example: `git reset --soft HEAD~1`
 **Removes the last commit while keeping the changes staged.**
 
 ### 9. How do you revert a commit?
+**We use `git revert <commit-id>` to undo a specific commit by creating a new commit that reverses its changes without rewriting Git history.**
+
 ### 10. How do you stage specific files?
 ### 11. What is Git branching strategy?
 ### 12. What is GitFlow?
