@@ -25,7 +25,7 @@
  
 **git pull**
 - Fetch + merge
-`git fetch origin`
+`git fetch origin`               
 `git merge origin/main`  
 
 ### 5. What is the difference between Git merge and Git rebase?
