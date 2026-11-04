@@ -24,7 +24,7 @@
 - Does NOT merge  
  
 **git pull**
-- Fetch + merge
+- Fetch + merge                                          
 `git fetch origin`                                                               
 `git merge origin/main`  
 
